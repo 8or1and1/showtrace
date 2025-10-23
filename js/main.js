@@ -1,1 +1,1 @@
-alert("Hello World!");
+var product = "Socks";
