@@ -1,8 +1,10 @@
-import { createApp } from 'vue'
+const { createApp, ref } = Vue
 
-const app = createApp({
-    el: '#app',
-    data: {
-        product: "Socks"
+createApp({
+    setup() {
+        const message = ref('Hello Vue!')
+        return {
+            message
+        }
     }
-})
+}).mount('#app')
